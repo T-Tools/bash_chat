@@ -1,4 +1,11 @@
 #!/bin/bash
+#Coded By Yell Phone Naing
+#You can take any idea from my script
+#Don't edit or modify codes,respect the coder
+trap 'bye;' 2
+bye () {
+killall ngrok
+}
 32_d () {
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip
 unzip ngrok-stable-linux-386.zip
