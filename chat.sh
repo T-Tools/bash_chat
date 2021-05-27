@@ -54,7 +54,8 @@ echo -e "\e[1;32m
                       ____ _  _ ____ ___      ____ ____ ____ _  _ 
                       |    |__| |__|  |       |__/ |  | |  | |\/| 
                       |___ |  | |  |  |       |  \ |__| |__| |  | 
-                            Coder [-:-] Yell Phone Naing
+
+                            Coder [-:-] Yell Phone Naing(WHF)
 \e[0m"  
 }
 
