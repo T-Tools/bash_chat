@@ -14,10 +14,15 @@ unzip ngrok-stable-linux-386.zip
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz
 unzip ngrok-stable-linux-arm64.zip
 }
+t_d () {
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+}
 setup () {
 echo -e "\e[1;32mSelect Your Computer Type
 (1) 32 bit
 (2) 64 bit
+(3) Termux (amd64)
 \e[0m"
 read -p $'\e[1;33mEnter Choice :: \e[0m' s_c
 case $s_c in
@@ -25,9 +30,11 @@ case $s_c in
 32_d;;
 2)
 64_d;;
+3)
+t_d;;
 esac
-mv ngrok /bin
-chmod +x /bin/ngrok
+mv ngrok /$PREFIX/bin
+chmod +x /$PREFIX/bin/ngrok
 main
 }
 banner () {
